@@ -29,7 +29,8 @@ Imports:
     matrixcalc
 Depends:
     R (>= 3.2.0)
-LinkingTo: BH,
+LinkingTo: 
+    BH,
     Rcpp,
     RcppArmadillo,
     RcppParallel
@@ -38,5 +39,6 @@ Suggests:
     testthat,
     knitr,
     rmarkdown
-SystemRequirements: GNU make
+SystemRequirements: GNU make, C++14
+CxxStd: CXX14
 VignetteBuilder: knitr
